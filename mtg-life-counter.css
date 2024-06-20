@@ -1,0 +1,129 @@
+#mtg-life-counter {
+    text-align: center;
+    background-color: black;
+    padding: 20px;
+    border-radius: 10px;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.player {
+    background-color: #444; /* Gray background */
+    padding: 20px;
+    margin: 10px;
+    border-radius: 10px;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.player-name {
+    font-size: 24px;
+    color: white;
+    margin-bottom: 10px;
+}
+
+.life-display {
+    font-size: 48px;
+    color: green;
+}
+
+.counter-display {
+    font-size: 20px;
+    color: red; /* Red color for text above buttons */
+    margin-top: 10px;
+}
+
+.counter-display span {
+    color: red; /* Ensure the counter labels are red */
+}
+
+button {
+    font-size: 20px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #333;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #555;
+}
+
+#reset-life {
+    background-color: red;
+    color: white;
+    font-size: 24px;
+    padding: 15px 30px;
+    margin-top: 20px;
+    width: 100%;
+    max-width: 300px;
+    box-sizing: border-box;
+}
+
+#game-format, #dice-type, #roll-dice {
+    font-size: 16px;
+    margin: 5px;
+    padding: 10px;
+    background-color: #333;
+    color: white; /* Keep white for readability */
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#apply-format {
+    font-size: 16px;
+    margin-top: 10px;
+    padding: 8px 16px;
+    background-color: blue;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+#apply-format:hover {
+    background-color: darkblue;
+}
+
+#dice-result {
+    font-size: 20px;
+    margin-top: 10px;
+    color: red; /* Red color for dice result */
+}
+
+/* Additional styling for red text */
+.counter-display span,
+#dice-result span,
+#game-format-label {
+    color: red;
+    font-weight: bold;
+}
+
+/* Media queries for responsiveness */
+@media (min-width: 600px) {
+    .player {
+        width: calc(50% - 20px);
+    }
+
+    #reset-life, #apply-format {
+        width: 100%;
+        max-width: 300px;
+    }
+}
+
+@media (min-width: 900px) {
+    .player {
+        width: calc(33.33% - 20px);
+    }
+}
+
+@media (min-width: 1200px) {
+    .player {
+        width: calc(25% - 20px);
+    }
+}
